@@ -1,0 +1,33 @@
+-- Employee Data Demo Syntax
+
+-- Table Structure
+CREATE TABLE employees (
+    emp_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE,
+    email VARCHAR(100)
+);
+
+-- Sample Insert
+INSERT INTO employees VALUES 
+(1001, 'John', 'Doe', 'Engineering', 75000.00, '2020-01-15', 'john.doe@company.com'),
+(1002, 'Jane', 'Smith', 'HR', 65000.00, '2019-03-20', 'jane.smith@company.com'),
+(1003, 'Mike', 'Johnson', 'Sales', 70000.00, '2021-06-10', 'mike.johnson@company.com');
+
+-- Sample Query
+SELECT emp_id, first_name, last_name, department, salary 
+FROM employees 
+WHERE department = 'Engineering' 
+ORDER BY salary DESC;
+
+-- Update Example
+UPDATE employees 
+SET salary = 80000.00 
+WHERE emp_id = 1001;
+
+-- Delete Example
+DELETE FROM employees 
+WHERE emp_id = 1003;
