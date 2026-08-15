@@ -32,3 +32,7 @@ WHERE emp_id = 1001;
 -- Delete Example
 DELETE FROM employees 
 WHERE emp_id = 1003;
+
+
+
+--TO CHECK THE DBT ADDED NEW LINE
