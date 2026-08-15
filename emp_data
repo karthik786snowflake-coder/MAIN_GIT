@@ -9,7 +9,8 @@ CREATE TABLE employees (
     salary DECIMAL(10, 2),
     hire_date DATE,
     email VARCHAR(100)
-);
+);    
+ ------changes
 
 -- Sample Insert
 INSERT INTO employees VALUES 
